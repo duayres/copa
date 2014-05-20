@@ -367,18 +367,19 @@
       }
       
       @-moz-keyframes rotateb {
-        from { -webkit-transform: rotateY(0); z-index:100; }
-        to   { -webkit-transform: rotateY(360deg); z-index:-100; }
+        from { -moz-transform: rotateY(0); z-index:100; }
+        to   { -moz-transform: rotateY(360deg); z-index:-100; }
       }
       
       @-o-keyframes rotateb {
-        from { -webkit-transform: rotateY(0); z-index:100; }
-        to   { -webkit-transform: rotateY(360deg); z-index:-100; }
+        from { -o-transform: rotateY(0); z-index:100; }
+        to   { -o-transform: rotateY(360deg); z-index:-100; }
       }
       
+      /*O certo era deixar só este, mas tem doido que usa chorme v. 12 e firefox v.15 :S */
       @keyframes rotateb {
-        from { -webkit-transform: rotateY(0); z-index:100; }
-        to   { -webkit-transform: rotateY(360deg); z-index:-100; }
+        from { transform: rotateY(0); z-index:100; }
+        to   { transform: rotateY(360deg); z-index:-100; }
       }
       
       body, table, tr, td {
